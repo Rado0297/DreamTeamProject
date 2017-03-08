@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include "Ingredients.h"
 
 class Product : Ingredients

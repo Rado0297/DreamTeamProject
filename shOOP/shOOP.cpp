@@ -3,19 +3,21 @@
 
 #include "stdafx.h"
 #include "Shop.h"
-#include <iostream>
-#include <string>
+
+const std::string ukstr = "Unknown command!\n";
+using std::cin;
+using std::cout;
 
 int main()
 {
 
 	Shop *shop = new Shop();
 	std::string command;
-	std::cout << "please enter command: ";
+	cout << "please enter command: ";
 	do
 	{
 		char temp[50];
-		std::cin.getline(temp, 50);
+		cin.getline(temp, 50);
 		command = std::string(temp);
 		std::string command1, command2, command3, command4;
 		std::string *currentlyWritingTo = &command1;
@@ -31,80 +33,98 @@ int main()
 			}
 			else *currentlyWritingTo += command[i];
 		}
-		if (command1 == "login")
-		{
-			//TO DO
-			char username[50], password[50];
-			std::cout << "Please enter username: ";
-			std::cin >> username;
-			std::cout << "Please enter password: ";
-			std::cin >> password;
-			/*int status = shop->Login(username, password);
-			if (status == 0) std::cout << "logged in successfully";
-			if (status == -1) std::cout << "wrong user name or password";*/
-		}
-		else if (command1 == "logout")
-		{
-			/*TO DO
-			shop->Logout();*/
-		}
-		else if (command1 == "books")
+		if (command1 == "product")
 		{
 			if (command2 == "add")
 			{
+				//TODO
+			}
+			else cout << ukstr;
+		}
+		else if (command1 == "client")
+		{
+			if (command2 == "add")
+			{
+				//TODO
+			}
+			else cout << ukstr;
+		}
+		else if (command1 == "shop")
+		{
+			if (command2 == "change")
+			{
+				if (command3 == "name")
+				{
+					//TODO
+				}
+				else if (command3 == "worktime")
+				{
+					//TODO
+				}
+				else if (command3 == "capital")
+				{
+					//TODO
+				}
+				else if (command3 == "workers")
+				{
+					//TODO
+				}
+				else cout << ukstr;
+			}
+			else if (command2 == "boot")
+			{
 				//TO DO
 
 			}
-			else if (command2 == "remove")
+			// Try/catch example! 
+			//else if (command2 == "info")
+			//{
+			//	//TO DO
+			//	char temp[50];
+			//	strncpy_s(temp, command3.c_str(), 50);
+			//	try
+			//	{
+			//		// print 
+			//	}
+			//	catch (int e)
+			//	{
+			//		if (e == -1) cout << "No book was found with ISBN " << temp;
+			//		else cout << "An error occurred";
+			//	}
+			//}
+			else cout << ukstr;
+		}
+		else if (command1 == "sell")
+		{
+			if (command2 == "normal")
 			{
-				//TO DO
-				char* tempEnter = new char[50];
-
+				//TODO
 			}
-			else if (command2 == "all")
+			else if (command2 == "proform")
 			{
-				//TO DO
+				//TODO
 			}
-			else if (command2 == "info")
+			else if (command2 == "invoice")
 			{
-				//TO DO
-				char temp[50];
-				strncpy_s(temp, command3.c_str(), 50);
-				try
-				{
-					// print 
-				}
-				catch (int e)
-				{
-					if (e == -1) std::cout << "No book was found with ISBN " << temp;
-					else std::cout << "An error occurred";
-				}
+				//TODO
 			}
-			else if (command2 == "find")
+			else cout << ukstr;
+		}
+		else if (command1 == "proform")
+		{
+			if (command2 == "disband")
 			{
-				//TO DO
-				/*int booksFound = 0;
-				Book *books = new Book[50];
-				char temp[50];
-				char temp2[50];
-				books = shop->FindBookBy(strncpy(temp, command3.c_str(), 50), strncpy(temp2, command4.c_str(), 50), &booksFound);
-				cout << "amount of books found: " << booksFound << endl;
-				for (int i = 0; i<booksFound; i++)
-				{
-					books[i].PrintBook();
-					if (i != 0) std::cout << endl << "----" << endl;
-				}*/
+				//TODO
 			}
-			else std::cout << "unknown command. ";
+			else cout << ukstr;
 		}
 		else if (command1 == "exit")
 		{
-			std::cout << "see you soon :)";
-			break;
+			return 0;
 		}
-		else std::cout << "unknown command. ";
+		else cout << "unknown command. ";
 
-		std::cout << std::endl << std::endl << "please enter command: ";
+		cout << std::endl << std::endl << "please enter command: ";
 	} while (true);
 	return 0;
 }
