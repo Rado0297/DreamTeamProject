@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Shop.h"
+#include<iostream>
 
 const std::string ukstr = "Unknown command!\n";
 using std::cin;
@@ -10,7 +11,6 @@ using std::cout;
 
 int main()
 {
-
 	Shop *shop = new Shop();
 	std::string command;
 	cout << "please enter command: ";
@@ -76,7 +76,7 @@ int main()
 				//TO DO
 
 			}
-			// Try/catch example! 
+			// Try/catch example!
 			//else if (command2 == "info")
 			//{
 			//	//TO DO
@@ -84,7 +84,7 @@ int main()
 			//	strncpy_s(temp, command3.c_str(), 50);
 			//	try
 			//	{
-			//		// print 
+			//		// print
 			//	}
 			//	catch (int e)
 			//	{
@@ -126,6 +126,6 @@ int main()
 
 		cout << std::endl << std::endl << "please enter command: ";
 	} while (true);
-	return 0;
+	return 15;
 }
 
