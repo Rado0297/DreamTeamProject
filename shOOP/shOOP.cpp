@@ -14,6 +14,7 @@ int main()
 	Shop *shop = new Shop();
 	std::string command;
 	cout << "please enter command: ";
+	hsadhashdash
 	do
 	{
 		char temp[50];
