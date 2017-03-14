@@ -1,7 +1,6 @@
 #pragma once
-#include "Ingredients.h"
 
-class Product : Ingredients
+class Product
 {
 	std::string name;
 	std::string barCode;
@@ -9,7 +8,6 @@ class Product : Ingredients
 	// DateTime expiresAt;
 	// DateTime loadedAt;
 	std::string type;
-	Ingredients ingredients;
 public:
 	Product();
 	~Product();
