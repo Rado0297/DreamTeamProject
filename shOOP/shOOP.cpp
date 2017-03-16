@@ -27,6 +27,20 @@ int main()
 
 	//for test purpouses
 	//origin, buyPrice, sellPrice, name, type, barCode, isEatable
+	
+//(country origin, double buyPrice, double sellPrice, std::string name, std::string type, std::string barCode, bool isEatable)
+
+	Product butter(Product::country::Germany, 1.2, 1.2, "Deutsche Marken Butter", "Milch producten", "ssUber", true);
+
+	butter.print();
+
+
+	//butter.add(Product::country::England, 0.8, 0.8, "English power butter", "Milk product", "UKISBEST", true);
+	//butter.print();
+
+	butter.add();
+	butter.print();
+	
 	//Product milk(Product::country::Russia, 1.10, 2.12, "Na Baba RUS", "milk", "asd", true);
 
 	//milk.print();

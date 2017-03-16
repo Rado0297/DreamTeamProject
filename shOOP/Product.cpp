@@ -16,6 +16,19 @@ void Product::print() const
 		<< "Is this product eatable: " << isEatable << "\n";
 }
 
+void Product::add()
+{
+	std::cin >> name;
+	std::cin >> buyPrice;
+	std::cin >> type;
+	std::cin >> barCode;
+	std::cin >> isEatable;
+
+	std::cout << "Congrats you have just added a product!" << "\n \n \n";
+
+	sellPrice = buyPrice * 100.21;
+}
+
 Product::~Product()
 {
 }
