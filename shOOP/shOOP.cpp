@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Shop.h"
+#include "Product.h"
 #include<iostream>
 
 const std::string ukstr = "Unknown command!\n";
@@ -13,6 +14,31 @@ int main()
 {
 	Shop *shop = new Shop();
 	std::string command;
+
+
+
+
+
+
+
+
+
+
+
+	//for test purpouses
+	//origin, buyPrice, sellPrice, name, type, barCode, isEatable
+	//Product milk(Product::country::Russia, 1.10, 2.12, "Na Baba RUS", "milk", "asd", true);
+
+	//milk.print();
+
+
+
+
+
+
+
+
+
 	cout << "please enter command: ";
 	do
 	{
