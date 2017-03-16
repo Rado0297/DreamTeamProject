@@ -1,10 +1,10 @@
 // shOOP.cpp : Defines the entry point for the console application.
 //
+#include <iostream>
 
 #include "stdafx.h"
 #include "Shop.h"
 #include "Product.h"
-#include<iostream>
 
 const std::string ukstr = "Unknown command!\n";
 using std::cin;
@@ -51,7 +51,7 @@ int main()
 
 
 
-
+	/*
 
 	cout << "please enter command: ";
 	do
@@ -165,6 +165,6 @@ int main()
 		else cout << "unknown command. ";
 
 		cout << std::endl << std::endl << "please enter command: ";
-	} while (true);
+	} while (true);*/
 	return 15;
 }

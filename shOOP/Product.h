@@ -12,7 +12,9 @@ public:
 		Germany,
 		England,
 		Poland,
-		USA
+		USA,
+		Japan,
+		Holand
 	};
 
 	//constructor
@@ -21,8 +23,12 @@ public:
 	//print method
 	void print() const;
 
+	//add product method
 	//void add(country origin, double buyPrice, double sellPrice, std::string name, std::string type, std::string barCode, bool isEatable);
 	void add();
+
+	//get name of the country for origin
+	const char* getOriginByName() const;
 
 	//destructor
 	~Product();
