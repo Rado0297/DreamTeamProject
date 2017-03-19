@@ -6,10 +6,6 @@ Invoice::Invoice()
 {
 }
 
-void Invoice::createInvoice(Client c, Shop s, Product p)
-{
-
-}
 
 Invoice::~Invoice()
 {
