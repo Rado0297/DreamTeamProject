@@ -61,3 +61,75 @@
 
 1489003404 c:\users\test\desktop\cpp\shopproject\shoop\stockformular.h
 
+1489957446 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\client.cpp
+	"stdafx.h"
+	"Client.h"
+	<iostream>
+	<cstdlib>
+
+1489824399 c:\users\justsomestupidname\documents\dreamteamproject\shoop\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+	<iostream>
+	<string>
+
+1489825790 c:\users\justsomestupidname\documents\dreamteamproject\shoop\targetver.h
+
+1489825790 c:\users\justsomestupidname\documents\dreamteamproject\shoop\client.h
+	<string>
+
+1489955521 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\invoice.cpp
+	"stdafx.h"
+	"Invoice.h"
+
+1489955521 c:\users\justsomestupidname\documents\dreamteamproject\shoop\invoice.h
+	"Product.h"
+	"Shop.h"
+	"Client.h"
+
+1489824399 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\order.cpp
+	"stdafx.h"
+	"Order.h"
+
+1489824399 c:\users\justsomestupidname\documents\dreamteamproject\shoop\order.h
+
+1489957697 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\product.cpp
+	"stdafx.h"
+	"Product.h"
+
+1489933699 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\shoop.cpp
+	"stdafx.h"
+	"Shop.h"
+	<iostream>
+
+1489955521 c:\users\justsomestupidname\documents\dreamteamproject\shoop\shop.h
+
+1489956788 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\shop.cpp
+	"stdafx.h"
+	"Shop.h"
+
+1489824399 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\stdafx.cpp
+	"stdafx.h"
+
+1489824399 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\stockformular.cpp
+	"stdafx.h"
+	"StockFormular.h"
+
+1489824399 c:\users\justsomestupidname\documents\dreamteamproject\shoop\stockformular.h
+
+1489958225 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\employee.cpp
+	"stdafx.h"
+	"Employee.h"
+
+1489955743 c:\users\justsomestupidname\documents\dreamteamproject\shoop\employee.h
+	"Finance.h"
+
+1489958042 source:c:\users\justsomestupidname\documents\dreamteamproject\shoop\finance.cpp
+	"stdafx.h"
+	"Finance.h"
+
+1489958009 c:\users\justsomestupidname\documents\dreamteamproject\shoop\finance.h
+
+1489955538 c:\users\justsomestupidname\documents\dreamteamproject\shoop\product.h
+

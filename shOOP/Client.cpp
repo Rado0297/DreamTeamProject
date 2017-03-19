@@ -1,5 +1,7 @@
 #include "stdafx.h"
 #include "Client.h"
+#include <iostream>
+#include <cstdlib>
 
 
 Client::Client()
@@ -48,7 +50,7 @@ std::string Client::serialize()
 	temp += EIK;
 	temp += ", IN: ";
 	temp += IN;
-	
+
 	serialized = temp;
 
 	return temp;
@@ -89,7 +91,7 @@ Client* Client::deserialize(std::string serialized)
 			temp += serialized[i];
 			i++;
 		}
-		newClient->type = std::atoi(temp.c_str());
+		newClient->type = std::atoll(temp.c_str());
 		temp = "";
 		while (serialized[i] != ':' && i < len) i++;
 		i += 2;
