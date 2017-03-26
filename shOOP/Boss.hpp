@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -12,10 +13,19 @@ public:
 	Boss();
 
 	// Overload Constructor
-	Boss(char*, int, int, int, double);
+	Boss(string, int, int, int, double);
+
+	//Copy Constructor
+	Boss(const Boss& other);
+
+	//Copy assignment operator
+	Boss& operator=(const Boss& other);
+
+	//Destructor
+	~Boss();
 
 	//Accesors
-	char* get_new_name();
+	string get_new_name();
 	int get_new_ucn();
 	int get_new_year_of_appointement();
 	int get_new_password();
@@ -28,7 +38,7 @@ public:
 	void print();
 
 private:
-	char* name;
+	string name;
 	int ucn;
 	int year_of_appointement;
 	int password;	

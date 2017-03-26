@@ -7,7 +7,7 @@ Boss::Boss()
 	password = 0;
 }
 
-Boss::Boss(char* new_name, int new_ucn, int new_year_of_appointment, int new_password, double new_salary)
+Boss::Boss(string new_name, int new_ucn, int new_year_of_appointment, int new_password, double new_salary)
 {
 	name = new_name;
 	ucn = new_ucn;
@@ -16,7 +16,32 @@ Boss::Boss(char* new_name, int new_ucn, int new_year_of_appointment, int new_pas
 	salary = new_salary;
 }
 
-char* Boss::get_new_name()
+Boss::Boss(const Boss& other)
+{
+	if (this != &other)
+	{
+		delete[] new_name;
+		new_name = other.new_name;
+	}
+
+	return *this;
+}
+
+Boss::Boss& operator=(const Boss&)
+{
+	if (this != &other)
+	{
+		new_name = other.new_name;
+	}
+	return *this;
+}
+
+Boss::~Boss()
+{
+	delete[] new_name;
+}
+
+string Boss::get_new_name()
 {
 	return name;
 }

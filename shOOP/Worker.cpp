@@ -5,13 +5,38 @@ Worker::Worker()
 	new_salary = 0;
 }
 
-Worker::Worker(char*name, position pos, int salary) 
+Worker::Worker(string name, position pos, int salary) 
 {
 	new_name = name;
 	new_salary = salary;
 }
 
-char* Worker::get_name() 
+Worker::Worker(const Worker& other) 
+{
+	if (this != &other)
+	{
+		delete[] new_name;
+		new_name = other.new_name;
+	}
+	
+	return *this;
+}
+
+Worker::Worker& operator=(const Worker& other)
+{
+	if (this != &other)
+	{
+		new_name = other.new_name;
+	}
+	return *this;
+}
+
+Worker::~Worker()
+{
+	delete[] new_name;
+}
+
+string Worker::get_name() 
 {
 	return new_name;
 }
@@ -21,7 +46,7 @@ int Worker::get_salary()
 	return new_salary;
 }
 
-const char* Worker::get_position_by_name()
+string Worker::get_position_by_name()
 {
 	switch (_position) 
 	{

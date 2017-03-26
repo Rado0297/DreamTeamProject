@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -19,12 +20,21 @@ public:
 	Worker();
 
 	// Overload Constructor
-	Worker(char* name, position pos, int salary);
+	Worker(string name, position pos, int salary);
+
+	//Copy Constructor
+	Worker(const Worker& other);
+
+	//Copy assignment operator
+	Worker& operator=(const Worker& other);
+
+	//Destructor
+	~Worker();
 
 	//Accesors
-	char* get_name();
+	string get_name();
 	int get_salary();
-	const char* get_position_by_name();
+	string get_position_by_name();
 
 	// Mutators
 	void set_salary(int new_salary);
@@ -33,7 +43,7 @@ public:
 	void print();
 
 private:
-	char* new_name;
+	string new_name;
 	position _position;
 	int new_salary;
 };
