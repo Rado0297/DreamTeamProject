@@ -20,25 +20,25 @@ Boss::Boss(const Boss& other)
 {
 	if (this != &other)
 	{
-		delete[] new_name;
+		cout << "copy construct" << endl;
 		new_name = other.new_name;
 	}
-
-	return *this;
 }
 
-Boss::Boss& operator=(const Boss&)
+Boss & Boss::operator=(const Boss & other)
 {
 	if (this != &other)
 	{
+
+		cout << "operator = " << endl;
 		new_name = other.new_name;
 	}
 	return *this;
+
 }
 
 Boss::~Boss()
 {
-	delete[] new_name;
 }
 
 string Boss::get_new_name()

@@ -6,10 +6,10 @@ using namespace std;
 #ifndef WORKER_H
 #define WORKER_H
 
-class Worker 
+class Worker
 {
 public:
-	enum class position 
+	enum class position
 	{
 		cashier,
 		manager,
