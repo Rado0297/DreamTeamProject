@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "Worker.hpp"
 
 Worker::Worker()
 {
 	new_salary = 0;
+	name = "unnamed";
 }
 
-Worker::Worker(string name, position pos, int salary)
+Worker::Worker(std::string name, position pos, int salary)
 {
 	new_name = name;
 	new_salary = salary;
@@ -16,7 +16,6 @@ Worker::Worker(const Worker& other)
 {
 	if (this != &other)
 	{
-		cout << "copy construct" << endl;
 		new_name = other.new_name;
 	}
 }
@@ -25,8 +24,6 @@ Worker & Worker::operator=(const Worker & other)
 {
 	if (this != &other)
 	{
-
-		cout << "operator = " << endl;
 		new_name = other.new_name;
 	}
 	return *this;
@@ -37,7 +34,7 @@ Worker::~Worker()
 {
 }
 
-string Worker::get_name()
+std::string Worker::get_name()
 {
 	return new_name;
 }
@@ -47,7 +44,7 @@ int Worker::get_salary()
 	return new_salary;
 }
 
-string Worker::get_position_by_name()
+std::string Worker::get_position_by_name()
 {
 	switch (_position)
 	{
@@ -63,8 +60,8 @@ void Worker::set_salary(int new_salary)
 
 void Worker::print()
 {
-	cout << "name: " << get_name()
+	std::cout << "name: " << get_name()
 		<< "\nposition: " << get_position_by_name()
-		<< "\nsalary: " << get_salary() << endl;
+		<< "\nsalary: " << get_salary() << std::endl;
 }
 

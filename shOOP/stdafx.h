@@ -7,10 +7,16 @@
 
 #include "targetver.h"
 
+// libraries
 #include <stdio.h>
 #include <tchar.h>
 #include <iostream>
 #include <string>
+#include <vector>
+
+// classes
+#include "Worker.hpp"
+#include "Shop.h"
 
 
 

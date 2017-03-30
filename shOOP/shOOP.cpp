@@ -2,7 +2,6 @@
 //
 
 #include "stdafx.h"
-#include "Shop.h"
 #include<iostream>
 
 const std::string ukstr = "Unknown command!\n";
@@ -25,7 +24,7 @@ int main()
 		{
 			if (command[i] == ' ')
 			{
-				// hande up to 4 options
+				// hande up to 4 command options
 				if (currentlyWritingTo == &command1) currentlyWritingTo = &command2;
 				else if (currentlyWritingTo == &command2) currentlyWritingTo = &command3;
 				else if (currentlyWritingTo == &command3) currentlyWritingTo = &command4;
@@ -33,7 +32,12 @@ int main()
 			}
 			else *currentlyWritingTo += command[i];
 		}
-		if (command1 == "product")
+		if (command1 == "test")
+		{
+			Worker newWorker;
+			newWorker.print();
+		}
+		else if (command1 == "product")
 		{
 			if (command2 == "add")
 			{
@@ -126,5 +130,5 @@ int main()
 
 		cout << std::endl << std::endl << "please enter command: ";
 	} while (true);
-	return 15;
+	return 0;
 }

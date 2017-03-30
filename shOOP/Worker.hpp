@@ -1,8 +1,3 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 #ifndef WORKER_H
 #define WORKER_H
 
@@ -20,7 +15,7 @@ public:
 	Worker();
 
 	// Overload Constructor
-	Worker(string name, position pos, int salary);
+	Worker(std::string name, position pos, int salary);
 
 	//Copy Constructor
 	Worker(const Worker& other);
@@ -32,9 +27,9 @@ public:
 	~Worker();
 
 	//Accesors
-	string get_name();
+	std::string get_name();
 	int get_salary();
-	string get_position_by_name();
+	std::string get_position_by_name();
 
 	// Mutators
 	void set_salary(int new_salary);
@@ -43,7 +38,7 @@ public:
 	void print();
 
 private:
-	string new_name;
+	std::string new_name;
 	position _position;
 	int new_salary;
 };
