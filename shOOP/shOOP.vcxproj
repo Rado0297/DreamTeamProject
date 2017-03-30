@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Case.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Invoice.h" />
     <ClInclude Include="Order.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Case.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Invoice.cpp" />
     <ClCompile Include="Order.cpp" />
