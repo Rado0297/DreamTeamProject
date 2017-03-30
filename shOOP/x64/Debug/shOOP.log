@@ -1,4 +1,8 @@
-﻿  Worker.cpp
+﻿  shOOP.cpp
+  Worker.cpp
+  Shop.cpp
+  Generating Code...
 c:\users\polly\documents\dreamteamproject\shoop\worker.cpp(58): warning C4715: 'Worker::get_position_by_name': not all control paths return a value
+  LINK : C:\Users\Polly\Documents\DreamTeamProject\x64\Debug\shOOP.exe not found or not built by the last incremental link; performing full link
   shOOP.vcxproj -> C:\Users\Polly\Documents\DreamTeamProject\x64\Debug\shOOP.exe
   shOOP.vcxproj -> C:\Users\Polly\Documents\DreamTeamProject\x64\Debug\shOOP.pdb (Full PDB)
