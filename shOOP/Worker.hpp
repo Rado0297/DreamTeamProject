@@ -1,3 +1,5 @@
+using namespace std;
+
 #ifndef WORKER_H
 #define WORKER_H
 
@@ -15,7 +17,7 @@ public:
 	Worker();
 
 	// Overload Constructor
-	Worker(std::string name, position pos, int salary);
+	Worker(string new_name, position new_pos, int new_salary);
 
 	//Copy Constructor
 	Worker(const Worker& other);
@@ -27,9 +29,9 @@ public:
 	~Worker();
 
 	//Accesors
-	std::string get_name();
-	int get_salary();
-	std::string get_position_by_name();
+	string get_new_name();
+	int get_new_salary();
+	string get_new_position();
 
 	// Mutators
 	void set_salary(int new_salary);
@@ -38,8 +40,8 @@ public:
 	void print();
 
 private:
-	std::string new_name;
+	string name;
 	position _position;
-	int new_salary;
+	int salary;
 };
 #endif WORKER_H

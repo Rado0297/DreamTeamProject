@@ -1,22 +1,23 @@
-#include "stdafx.h"
+#include "Worker.h"
 
 Worker::Worker()
 {
-	new_salary = 0;
 	name = "unnamed";
+	salary = 0;
 }
 
-Worker::Worker(std::string name, position pos, int salary)
+Worker::Worker(string new_name, position new_pos, int new_salary)
 {
-	new_name = name;
-	new_salary = salary;
+	name = new_name;
+	salary = new_salary;
 }
 
 Worker::Worker(const Worker& other)
 {
 	if (this != &other)
 	{
-		new_name = other.new_name;
+		cout << "copy construct" << endl;
+		name = other.name;
 	}
 }
 
@@ -24,7 +25,9 @@ Worker & Worker::operator=(const Worker & other)
 {
 	if (this != &other)
 	{
-		new_name = other.new_name;
+
+		cout << "operator = " << endl;
+		name = other.name;
 	}
 	return *this;
 
@@ -34,17 +37,17 @@ Worker::~Worker()
 {
 }
 
-std::string Worker::get_name()
+string Worker::get_new_name()
 {
-	return new_name;
+	return name;
 }
 
-int Worker::get_salary()
+int Worker::get_new_salary()
 {
-	return new_salary;
+	return salary;
 }
 
-std::string Worker::get_position_by_name()
+string Worker::get_new_position()
 {
 	switch (_position)
 	{
@@ -60,8 +63,8 @@ void Worker::set_salary(int new_salary)
 
 void Worker::print()
 {
-	std::cout << "name: " << get_name()
-		<< "\nposition: " << get_position_by_name()
-		<< "\nsalary: " << get_salary() << std::endl;
+	cout << "name: " << get_new_name()
+		<< "\nposition: " << get_new_position()
+		<< "\nsalary: " << get_new_salary() << endl;
 }
 
