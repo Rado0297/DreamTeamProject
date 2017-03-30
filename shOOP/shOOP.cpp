@@ -4,7 +4,6 @@
 
 #include "stdafx.h"
 #include "Shop.h"
-#include "Product.h"
 
 const std::string ukstr = "Unknown command!\n";
 using std::cin;
