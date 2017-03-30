@@ -19,6 +19,7 @@ void Case::closeCase()
 
 void Case::addProductToBill()
 {
+	//in progress
 	std::vector<Product> products;
 
 }
