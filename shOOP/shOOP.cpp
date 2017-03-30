@@ -34,8 +34,7 @@ int main()
 		}
 		if (command1 == "test")
 		{
-			Worker newWorker;
-			newWorker.print();
+			// Test your stuff here!
 		}
 		else if (command1 == "product")
 		{
