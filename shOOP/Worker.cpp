@@ -5,10 +5,10 @@ Worker::Worker()
 	new_salary = 0;
 }
 
-Worker::Worker(string name, position pos, int salary)
+Worker::Worker(string new_name, position new_pos, int new_salary)
 {
-	new_name = name;
-	new_salary = salary;
+	name = new_name;
+	salary = new_salary;
 }
 
 Worker::Worker(const Worker& other)
@@ -16,7 +16,7 @@ Worker::Worker(const Worker& other)
 	if (this != &other)
 	{
 		cout << "copy construct" << endl;
-		new_name = other.new_name;
+		name = other.name;
 	}
 }
 
@@ -26,7 +26,7 @@ Worker & Worker::operator=(const Worker & other)
 	{
 
 		cout << "operator = " << endl;
-		new_name = other.new_name;
+		name = other.name;
 	}
 	return *this;
 
@@ -36,17 +36,17 @@ Worker::~Worker()
 {
 }
 
-string Worker::get_name()
+string Worker::get_new_name()
 {
-	return new_name;
+	return name;
 }
 
-int Worker::get_salary()
+int Worker::get_new_salary()
 {
-	return new_salary;
+	return salary;
 }
 
-string Worker::get_position_by_name()
+string Worker::get_new_position()
 {
 	switch (_position)
 	{
@@ -62,8 +62,8 @@ void Worker::set_salary(int new_salary)
 
 void Worker::print()
 {
-	cout << "name: " << get_name()
-		<< "\nposition: " << get_position_by_name()
-		<< "\nsalary: " << get_salary() << endl;
+	cout << "name: " << get_new_name()
+		<< "\nposition: " << get_new_position()
+		<< "\nsalary: " << get_new_salary() << endl;
 }
 
