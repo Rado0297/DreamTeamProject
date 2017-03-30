@@ -4,6 +4,8 @@ class Shop
 	std::string name;
 	std::vector<Worker> workers;
 public:
+#pragma region Constructors
+
 	// Default constructor
 	Shop();
 	
@@ -16,12 +18,20 @@ public:
 	// Construct by serialized shop
 	Shop(std::string serialized);
 
-	// Accessors
+#pragma endregion Constructors
+
+#pragma region Accessors
+
 	std::string GetName();
 	std::vector<Worker> GetWorkers();
 
-	// Mutators
+#pragma endregion Accessors
+
+#pragma region Mutators
+
 	std::string ChangeName(std::string newName);
+
+#pragma endregion Mutators
 
 	// Destructor
 	~Shop();
