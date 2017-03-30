@@ -1,6 +1,4 @@
 #include "stdafx.h"
-#include "Case.hpp"
-#include "Client.h"
 
 Case::Case(double amountOfMoney, int caseID, bool isClosed, std::string workerID, std::string workerPassword, std::string bossID, std::string bossPassword)
 {

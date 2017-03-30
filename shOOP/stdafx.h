@@ -17,6 +17,10 @@
 // classes
 #include "Worker.hpp"
 #include "Shop.h"
+#include "Case.hpp"
+
+//#include "Client.h"
+
 
 
 
