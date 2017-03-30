@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1489004532 source:c:\users\test\desktop\cpp\shopproject\shoop\client.cpp
+	"stdafx.h"
+	"Client.h"
+
+1489013138 c:\users\test\desktop\cpp\shopproject\shoop\stdafx.h
+	"targetver.h"
+	<stdio.h>
+	<tchar.h>
+	<iostream>
+	<string>
+
+1489073431 c:\users\test\desktop\cpp\shopproject\shoop\targetver.h
+
+1489004541 c:\users\test\desktop\cpp\shopproject\shoop\client.h
+	<string>
+
+1489007243 source:c:\users\test\desktop\cpp\shopproject\shoop\ingredients.cpp
+	"stdafx.h"
+	"Ingredients.h"
+
+1489007240 c:\users\test\desktop\cpp\shopproject\shoop\ingredients.h
+	<string>
+
+1489003409 source:c:\users\test\desktop\cpp\shopproject\shoop\invoice.cpp
+	"stdafx.h"
+	"Invoice.h"
+
+1489003408 c:\users\test\desktop\cpp\shopproject\shoop\invoice.h
+
+1489003408 source:c:\users\test\desktop\cpp\shopproject\shoop\order.cpp
+	"stdafx.h"
+	"Order.h"
+
+1489003407 c:\users\test\desktop\cpp\shopproject\shoop\order.h
+
+1489003410 source:c:\users\test\desktop\cpp\shopproject\shoop\product.cpp
+	"stdafx.h"
+	"Product.h"
+
+1489073509 c:\users\test\desktop\cpp\shopproject\shoop\product.h
+	"Ingredients.h"
+
+1489075079 source:c:\users\test\desktop\cpp\shopproject\shoop\shoop.cpp
+	"stdafx.h"
+	"Shop.h"
+	<iostream>
+
+1489003304 c:\users\test\desktop\cpp\shopproject\shoop\shop.h
+
+1489003302 source:c:\users\test\desktop\cpp\shopproject\shoop\shop.cpp
+	"stdafx.h"
+	"Shop.h"
+
+1489003068 source:c:\users\test\desktop\cpp\shopproject\shoop\stdafx.cpp
+	"stdafx.h"
+
+1489003405 source:c:\users\test\desktop\cpp\shopproject\shoop\stockformular.cpp
+	"stdafx.h"
+	"StockFormular.h"
+
+1489003404 c:\users\test\desktop\cpp\shopproject\shoop\stockformular.h
+
