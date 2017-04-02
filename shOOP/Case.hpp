@@ -28,6 +28,8 @@ public:
 	};
 private:
 
+	//test commit
+
 	/*
 	dynamical array for products of each client
 	*/
